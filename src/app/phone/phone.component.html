@@ -1,0 +1,12 @@
+<div>
+    <h3> {{user.role }} </h3>
+    <div>
+        {{user.firstname }} {{user.lastname }}
+    </div>
+    <div *ngIf="user.award != ''">
+        Récompense : {{user.award }}
+    </div>
+    <div>
+        Tel : {{user.phone}} <button mat-button color="accent" (click)="displayNumber()"> zoom</button>
+    </div>
+</div>
